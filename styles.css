@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "GT-America-Standard-Light";
+    src: url("GT-America-Standard-Light.oft") format("opentype");
+    font-weight: 200;
+  }
+
+@font-face {
+    font-family: "GT-America-Standard-Regular";
+    src: url("GT-America-Standard-Regular.oft") format("opentype");
+    font-weight: normal;
+  }
+
+body {
+    background-color: #d2ffc0;
+}
+
+h1 {
+    font-family: "GT-America-Standard-Light", Helvetica, Arial, sans-serif;
+}
