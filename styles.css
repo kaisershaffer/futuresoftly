@@ -1,19 +1,70 @@
 @font-face {
     font-family: "GT-America-Standard-Light";
-    src: url("GT-America-Standard-Light.oft") format("opentype");
+    src: url("/fonts/GT-America-Standard-Light.oft") format("opentype");
     font-weight: 200;
-  }
+}
 
 @font-face {
     font-family: "GT-America-Standard-Regular";
-    src: url("GT-America-Standard-Regular.oft") format("opentype");
+    src: url("/fonts/GT-America-Standard-Regular.oft") format("opentype");
     font-weight: normal;
-  }
+}
 
 body {
-    background-color: #d2ffc0;
+    background-color: #95FF6B;
+    text-rendering: optimizeLegibility;
+    margin:0;
+	padding:0;
+	height:100%; /* needed for container min-height */
 }
 
 h1 {
-    font-family: "GT-America-Standard-Light", Helvetica, Arial, sans-serif;
+    font-family: "GT-America-Standard", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 15vw;
+    letter-spacing: -0.01em;
+    line-height: 32px;
+    color: black; 
+}
+
+p {
+    font-family: "GT-America-Standard", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: 16px;
+    color: #000;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255); 
+}
+
+a:presse {
+    color: rgb(255, 255, 255); 
+}
+
+
+nav {
+    position:relative; 
+    width: 100%;
+    text-align: center
+}
+
+footer {
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.871);
+    bottom: 0;
+    backdrop-filter: blur(12px);
 }
