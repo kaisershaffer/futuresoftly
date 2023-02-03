@@ -3,14 +3,16 @@
   font-family: 'GT-America-Standard-Regular';
   src: url('GT-America-Standard-Regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('GT-America-Standard-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('GT-America-Standard-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('GT-America-Standard-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+       font-weight: 400;
 }
 
 @font-face {
     font-family: 'GT-America-Standard-Light';
     src: url('GT-America-Standard-Light.woff2') format('woff2'), /* Super Modern Browsers */
          url('GT-America-Standard-Light.woff') format('woff'), /* Pretty Modern Browsers */
-         url('GT-America-Standard-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('GT-America-Standard-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 300;
 }
 
 
@@ -34,7 +36,7 @@ h1 {
 
 p {
     font-family: 'GT-America-Standard', Helvetica, Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.01em;
     line-height: 16px;
