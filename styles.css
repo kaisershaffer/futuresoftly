@@ -19,7 +19,7 @@
 /* Styles */
 body {
     background-color: #95FF6B;
-    text-rendering: optimizeLegibility;
+    /* text-rendering: optimizeLegibility; */
     margin:0;
 	padding:0;
 	height:100%; /* needed for container min-height */
