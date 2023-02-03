@@ -1,15 +1,20 @@
+/* Font Files */
 @font-face {
-    font-family: "GT-America-Standard-Light";
-    src: url("/fonts/GT-America-Standard-Light.oft") format("opentype");
-    font-weight: 200;
+  font-family: 'GT-America-Standard-Regular';
+  src: url('GT-America-Standard-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('GT-America-Standard-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('GT-America-Standard-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {
-    font-family: "GT-America-Standard-Regular";
-    src: url("/fonts/GT-America-Standard-Regular.oft") format("opentype");
-    font-weight: normal;
+    font-family: 'GT-America-Standard-Light';
+    src: url('GT-America-Standard-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('GT-America-Standard-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('GT-America-Standard-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
+
+/* Styles */
 body {
     background-color: #95FF6B;
     text-rendering: optimizeLegibility;
@@ -19,7 +24,7 @@ body {
 }
 
 h1 {
-    font-family: "GT-America-Standard", Helvetica, Arial, sans-serif;
+    font-family: 'GT-America-Standard', Helvetica, Arial, sans-serif;
     font-weight: 200;
     font-size: 15vw;
     letter-spacing: -0.01em;
@@ -28,7 +33,7 @@ h1 {
 }
 
 p {
-    font-family: "GT-America-Standard", Helvetica, Arial, sans-serif;
+    font-family: 'GT-America-Standard', Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 16px;
     letter-spacing: -0.01em;
