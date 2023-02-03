@@ -3,7 +3,8 @@
   font-family: 'GT-America-Standard-Regular';
   src: url('GT-America-Standard-Regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('GT-America-Standard-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('GT-America-Standard-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+       url('GT-America-Standard-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('GT-America-Standard-Regular.svg') format('svg'); /* Legacy iOS */
        font-weight: 400;
 }
 
@@ -11,7 +12,8 @@
     font-family: 'GT-America-Standard-Light';
     src: url('GT-America-Standard-Light.woff2') format('woff2'), /* Super Modern Browsers */
          url('GT-America-Standard-Light.woff') format('woff'), /* Pretty Modern Browsers */
-         url('GT-America-Standard-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+         url('GT-America-Standard-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('GT-America-Standard-Light.svg') format('svg'); /* Legacy iOS */
     font-weight: 300;
 }
 
