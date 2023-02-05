@@ -24,9 +24,9 @@
 
 /* Styles */
 body {
-    background-color: #95FF6B;
+    background-color: #ffffff;
+    margin: 10px 10px 10px 10px;
     /* text-rendering: optimizeLegibility; */
-    margin:0;
 	padding:0;
 	height:100%; /* needed for container min-height */
 }
@@ -36,7 +36,7 @@ h1 {
     font-weight: 300;
     font-size: 15vw;
     letter-spacing: -0.03em;
-    line-height: 32px;
+    line-height: 5vw;
     color: black; 
 }
 
@@ -63,7 +63,10 @@ a:presse {
 }
 
 
-nav {
+.FS_contain {
+    background-color: #95FF6B;
+    overflow: scroll;
+    border-radius: 50px;
     position:relative; 
     width: 100%;
     text-align: center
@@ -82,3 +85,30 @@ footer {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 }
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    footer {
+        position: fixed;
+        left: 10%;
+        right: 10%;
+        margin-bottom: 20px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.871);
+        bottom: 0;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    p {
+        font-family: 'GT-America-Standard', Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16rem;
+        letter-spacing: -0.03m;
+        line-height: 16rem;
+        color: #000;
+    }
+  }
