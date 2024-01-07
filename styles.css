@@ -66,7 +66,7 @@ p {
     font-kerning: normal;
     font-feature-settings: "ss03";
     letter-spacing: -0.03m;
-    line-height: 16px;
+    line-height: 14px;
     color: #000;
 }
 
@@ -112,7 +112,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
     /* For mobile phones: */
 
     .FS_contain {
