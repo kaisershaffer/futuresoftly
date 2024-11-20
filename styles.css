@@ -25,9 +25,9 @@
 
 ::selection {
     /* Change highlight background color to black */
-    background: #000;
+    background: #95FF6B;
     /* Change highlight text color to red */
-    color: #FBF9EC;
+    color: #000;
   }
 
 body {
@@ -85,7 +85,7 @@ a:pressed {
 
 
 .FS_contain {
-    background-color: #95FF6B;
+    background-color: #ffffff;
     overflow: scroll;
     border-radius: 50px;
     position:relative; 
