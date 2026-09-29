@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import { getProject, getProjects } from "../../lib/content";
+import { urlFor } from "../../lib/sanity";
+
+export const getStaticPaths = (async () => {
+  const projects = await getProjects();
+  return projects.map((project) => ({ params: { slug: project.slug } }));
+}) satisfies GetStaticPaths;
+
+const project = await getProject(Astro.params.slug);
+if (!project) return Astro.redirect("/");
+---
+
+<Base title={`${project.title} ( future softly )`}>
+  <div class="FS_mainWrapper">
+    <div class="FS_contain">
+      <h1>{project.title}</h1>
+      {
+        project.coverImage && (
+          <img
+            class="cover_image"
+            src={urlFor(project.coverImage).width(1600).auto("format").url()}
+            alt={project.coverImage.alt ?? ""}
+          />
+        )
+      }
+      <div class="text_tagline">
+        {project.summary && <p>{project.summary}</p>}
+        {project.disciplines?.length && <p>{project.disciplines.join(", ")}</p>}
+        {project.year && <p>{project.year}</p>}
+      </div>
+    </div>
+    <footer>
+      <p><a href="/">← FUTURE SOFTLY</a></p>
+    </footer>
+  </div>
+</Base>

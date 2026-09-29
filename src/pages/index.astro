@@ -1,0 +1,50 @@
+---
+import Base from "../layouts/Base.astro";
+import { getHome, getProjects } from "../lib/content";
+
+const home = await getHome();
+const projects = await getProjects();
+---
+
+<Base>
+  <div class="FS_mainWrapper">
+    <div class="FS_contain">
+      <h1>{home.title}</h1>
+      <div class="photo_frame"></div>
+      <div class="text_tagline">
+        {home.tagline.map((line) => <p>{line}</p>)}
+      </div>
+    </div>
+    <div class="text_list">
+      {home.phrases.map((phrase) => <h1>{phrase}</h1>)}
+      {
+        projects.length > 0 && (
+          <ul class="project_list">
+            {projects.map((project) => (
+              <li>
+                <a href={`/work/${project.slug}/`}>
+                  <p>
+                    {project.title}
+                    {project.year && ` (${project.year})`}
+                  </p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+      <div class="text_tagline">
+        {home.signoff.map((line) => <p class="preserve_lines">{line}</p>)}
+      </div>
+    </div>
+    {
+      home.instagramUrl && (
+        <footer>
+          <p>
+            <a href={home.instagramUrl}>→ INSTAGRAM ←</a>
+          </p>
+        </footer>
+      )
+    }
+  </div>
+</Base>

@@ -111,8 +111,8 @@ footer {
     border-radius: 25px;
     background-color: rgba(149, 255, 107, 0.5);
     bottom: 0;
-    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
 }
 
 
@@ -141,8 +141,8 @@ footer {
         border-radius: 25px;
         background-color: rgba(255, 255, 255, 0.5);
         bottom: 0;
-        backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
     }
 
     p {
@@ -154,3 +154,18 @@ footer {
         color: #000;
     }
   }
+/* Content from Sanity */
+
+.preserve_lines {
+    white-space: pre-line;
+}
+
+.project_list {
+    list-style: none;
+    padding: 0;
+}
+
+.cover_image {
+    max-width: 100%;
+    border-radius: 25px;
+}
